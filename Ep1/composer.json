@@ -1,0 +1,27 @@
+{ 
+    "name": "guilhermesc9/phptips001",
+    "description": "Conhecendo o Composer e Configurando a IDE | PHP Tips #001",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guilherme S. Carvalho",
+            "email": "guilhermecarvalho9205@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "config":{
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+             "source/Config.php"
+        ]
+    },
+    "require": {
+        "phpmailer/phpmailer": "6.0.*"
+    }
+}
